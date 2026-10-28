@@ -1,0 +1,28 @@
+
+version: 2
+
+models:
+  - name: job_history
+    columns:
+      - name: EMPLOYEE_ID
+        description: "Employee identifier"
+        data_tests:
+          - not_null
+
+      - name: START_DATE
+        description: "Start date of the job"
+        data_tests:
+          - not_null
+
+      - name: END_DATE
+        description: "End date of the job"
+        data_tests:
+          - not_null
+
+      - name: JOB_ID
+        description: "Job identifier"
+        data_tests:
+          - not_null
+
+      - name: DEPARTMENT_ID
+        description: "Department identifier"

@@ -1,0 +1,28 @@
+
+version: 2
+
+models:
+  - name: locations
+    columns:
+      - name: LOCATION_ID
+        description: "Unique location identifier"
+        data_tests:
+          - not_null
+          - unique
+
+      - name: STREET_ADDRESS
+        description: "Street address of the location"
+
+      - name: POSTAL_CODE
+        description: "Postal or ZIP code"
+
+      - name: CITY
+        description: "City name"
+        data_tests:
+          - not_null
+
+      - name: STATE_PROVINCE
+        description: "State or province name"
+
+      - name: COUNTRY_ID
+        description: "Identifier of the country"

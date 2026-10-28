@@ -1,0 +1,22 @@
+
+version: 2
+
+models:
+  - name: departments
+    columns:
+      - name: DEPARTMENT_ID
+        description: "Unique department identifier"
+        data_tests:
+          - not_null
+          - unique
+
+      - name: DEPARTMENT_NAME
+        description: "Name of the department"
+        data_tests:
+          - not_null
+
+      - name: MANAGER_ID
+        description: "Manager employee identifier"
+
+      - name: LOCATION_ID
+        description: "Location identifier"

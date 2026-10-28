@@ -1,0 +1,15 @@
+version: 2
+
+sources:
+  - name: Arun
+    database: HR
+    schema: HR
+
+    tables:
+      - name: employees
+      - name: departments
+      - name: countries
+      - name: regions
+      - name: locations
+      - name: jobs
+      - name: job_history

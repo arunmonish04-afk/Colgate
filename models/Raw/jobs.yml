@@ -1,0 +1,22 @@
+
+version: 2
+
+models:
+  - name: jobs
+    columns:
+      - name: JOB_ID
+        description: "Unique job identifier"
+        data_tests:
+          - not_null
+          - unique
+
+      - name: JOB_TITLE
+        description: "Title of the job"
+        data_tests:
+          - not_null
+
+      - name: MIN_SALARY
+        description: "Minimum salary for the job"
+
+      - name: MAX_SALARY
+        description: "Maximum salary for the job"

@@ -1,0 +1,14 @@
+
+version: 2
+
+models:
+  - name: region
+    columns:
+      - name: REGION_ID
+        description: "Unique region identifier"
+        data_tests:
+          - not_null
+          - unique
+
+      - name: REGION_NAME
+        description: "Name of the region"
